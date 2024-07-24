@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.webp" type="image/x-icon">
+    <title>Voraga</title>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="grid__container">
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Voraga Joyeria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/acero.html">Acero</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/plata.html">Plata</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/enchapadoenoro.html">Oro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/accesorios.html">Accesorios</a>
+                  </li>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                <button class="btn btn-outline-success custom__color-buscar" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <header class="header__grid">
+        <section class="header__info">
+            <p>¡Bienvenido a la joyería más exclusiva de Argentina! Obtén un 40% de descuento con el código:<span class="codigo__descuento"> Voraga</span></p>
+        </section>
+        <section class="container__navbar">
+            <nav class="navbar__voraga navbar__contenedor">
+                <a href="../index.html" class="navbar__logo">
+                    <img src="../img/logo.webp" alt="Logo de la pagina">
+                    <span>Voraga</span>
+                </a>
+                <div class="navbar__nav">
+                    <ul class="navbar__list">
+                        <li class="nav__link">
+                            <a href="../pages/acero.html">Acero</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="../pages/plata.html">Plata</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="../pages/enchapadoenoro.html">Oro</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="../pages/accesorios.html">Accesorios</a>
+                        </li>
+                    </ul>
+                    <form action="" class="navbar__search">
+                        <a href="#" class="search__icon">
+                            <img src="../img/search-heart.svg" alt="lupa de busqueda">
+                        </a>
+                    </form>
+                    <a href="#" class="iconos__nav">
+                        <img src="../img/handbag-fill.svg" alt="icono de bolso">
+                    </a>
+                    <a href="#" class="iconos__nav">
+                        <img src="../img/person-circle.svg" alt="icono de usuario">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main class="main__oro">
+        <section class="intro__oro">
+            <div class="banner__oro">
+                <img src="../img/banneroro.webp" alt="Banner Oro">
+            </div>
+            <div class="promo__oro">
+                <h2>Aprovecha las mejores ofertas en ORO 18 kilates</h2>
+            </div>
+            <section class="cards__oro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="card card__oro">
+                                <img src="../img/Collardeoroydije.webp" class="card-img-top" alt="Collar de oro y dije corazón">
+                                <div class="card-body">
+                                    <h5 class="card-title">Collar de oro Corazón</h5>
+                                    <p class="card-text">Cadena 45cm oro 18 kilates</p>
+                                    <p class="card-text">$98712</p>
+                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="card card__oro">
+                                <img src="../img/collarcondijerosa.webp" class="card-img-top" alt="Collar de oro con dije de rosa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Collar de oro 18 kilates</h5>
+                                    <p class="card-text">Cadena de 45cm oro 18 kilates</p>
+                                    <p class="card-text">$98712</p>
+                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="card card__oro">
+                                <img src="../img/anilloorolady.webp" class="card-img-top" alt="Anillo con piedra roja estilo lady di">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anillo con Ruby</h5>
+                                    <p class="card-text">Oro 18 kilates - Estilo lady di</p>
+                                    <p class="card-text">$98712</p>
+                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 mb-4">
+                            <div class="card card__oro">
+                                <img src="../img/Anillobuho.webp" class="card-img-top" alt="Anillo con forma de buho">
+                                <div class="card-body">
+                                    <h5 class="card-title">Anillo buho</h5>
+                                    <p class="card-text">Oro 18 k - detalles en diamantes</p>
+                                    <p class="card-text">$98712</p>
+                                    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="oro__data">
+            <div class="info__oro">
+                <h3>¿Cuánto duran las joyas enchapadas en oro?</h3>
+                <p>La duración de las joyas enchapadas en oro varía según la calidad del chapado, el cuidado y el uso. En promedio, pueden durar de uno a cinco años. Factores como la calidad del chapado, el contacto con sustancias químicas y el uso frecuente afectan su durabilidad.</p>
+                <hr>
+                <h3>¿Cómo puedo limpiar y mantener mis joyas enchapadas en oro?</h3>
+                <p>Para limpiar y mantener tus joyas enchapadas en oro de Gratia, sigue estos consejos:</p>
+                <ul>
+                    <li>Limpia suavemente las joyas con un paño suave y seco para eliminar el polvo y la suciedad.</li>
+                    <li>Evita el contacto con productos químicos, perfumes y agua salada, ya que pueden dañar la capa de oro.</li>
+                    <li>No utilices limpiadores abrasivos o cepillos duros, ya que pueden rayar la superficie de la joya.</li>
+                    <li>Guarda tus joyas en un lugar seco y protegido, como una bolsa de tela o una caja de joyería, para evitar la exposición al aire y la humedad.</li>
+                </ul>
+                <hr>
+                <h3>¿Qué es el enchapado en oro?</h3>
+                <p>El enchapado en oro es un proceso mediante el cual se aplica una capa fina de oro sobre la superficie de otro metal, como latón o cobre, para darle la apariencia y el brillo del oro sólido. Este proceso se realiza utilizando técnicas como el "gold filled" o "enchapado en oro laminado", en el cual se aplica la capa de oro, generalmente de 18 quilates, mediante calor y presión.</p>
+            </div>
+            <div class="container oro__carru">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../img/orocarru1.webp" class="d-block w-100" alt="imagenes de oro">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/orocarru2.webp" class="d-block w-100" alt="imagenes de oro">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../img/orocarru3.webp" class="d-block w-100" alt="imagenes de oro">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="destacados__oro">
+            <div class="promo__oro">
+                <h3>Productos destacados de JUNIO</h3>
+                <p>Aprovecha un 15% OFF comprando cualquiera de estos productos</p>
+            </div>
+            <div class="container container__promo__oro">
+                <div class="row row__oro">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/Dijenenaoro.webp" class="card-img-top" alt="Dije Hija">
+                            <div class="card-body">
+                                <h5 class="card-title">Dije Hija</h5>
+                                <p                            class="card-text">Oro 18 kilates - 5cm de largo</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/dijeVoro.webp" class="card-img-top" alt="Dije letra V">
+                            <div class="card-body">
+                                <h5 class="card-title">Dije letra V</h5>
+                                <p class="card-text">Oro 18 kilates - 5cm de largo</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/dijeestrellaoro.webp" class="card-img-top" alt="Dije estrella diamantes">
+                            <div class="card-body">
+                                <h5 class="card-title">Dije estrella diamantes</h5>
+                                <p class="card-text">Oro 18 kilates con diamantes</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/dijedragonoro.webp" class="card-img-top" alt="Dije Dragón">
+                            <div class="card-body">
+                                <h5 class="card-title">Dije Dragón</h5>
+                                <p class="card-text">Oro 18 kilates - 5cm de largo</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row__oro">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/Anillomujeroro.webp" class="card-img-top" alt="Anillo Turco">
+                            <div class="card-body">
+                                <h5 class="card-title">Anillo Turco</h5>
+                                <p class="card-text">Fabricado en 3 oros diferentes</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/Anilloesmeraldaoro.webp" class="card-img-top" alt="Anillo con esmeralda">
+                            <div class="card-body">
+                                <h5 class="card-title">Anillo con esmeralda</h5>
+                                <p class="card-text">Anillo de oro 18 kilates</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/Anillosolitariooro.webp" class="card-img-top" alt="Anillo Solitario">
+                            <div class="card-body">
+                                <h5 class="card-title">Anillo Solitario</h5>
+                                <p class="card-text">Oro 18 kilates - Diamante</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <div class="card card__oro">
+                            <img src="../img/anilloflororo.webp" class="card-img-top" alt="Anillo con Flor tallada">
+                            <div class="card-body">
+                                <h5 class="card-title">Anillo con Flor tallada</h5>
+                                <p class="card-text">Oro 18 kilates</p>
+                                <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__grid-voraga">
+        <section class="categorias__footer">
+            <h4 class="titulo__footer">Categorias</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">Acero</a>
+                </li>
+                <li>
+                    <a href="">Plata</a>
+                </li>
+                <li>
+                    <a href="">Oro</a>
+                </li>
+                <li>
+                    <a href="">Accesorios</a>
+                </li>
+            </ul>
+        </section>
+        <section class="ayuda__footer">
+            <h4 class="titulo__footer">Ayuda</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Cambios y devoluciones</a>
+                </li>
+                <li>
+                    <a href="">Como comprar?</a>
+                </li>
+                <li>
+                    <a href="">Atencion al cliente</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contacto__footer">
+            <h4 class="titulo__footer">Contacto</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">E-mail: voraga@gmail.com</a>
+                </li>
+                <li>
+                    <a href="">Direccion: Lago Escondido 967</a>
+                </li>
+            </ul>
+        </section>
+        <section class="siguenos__footer">
+            <h4 class="titulo__footer">Siguenos</h4>
+            <div class="social__iconos">
+                <a href="">
+                    <img src="../img/facebook.svg" alt="logo facebook">
+                </a>
+                <a href="">
+                    <img src="../img/instagram.svg" alt="logo instagram">
+                </a>
+                <a href="">
+                    <img src="../img/twitter-x.svg" alt="logo">
+                </a>
+                <a href="">
+                    <img src="../img/whatsapp.svg" alt="">
+                </a>
+            </div>
+            <div class="suscribir">
+                <h4 class="titulo__suscribir">Suscribete ahora!</h4>
+                <form action="" class="formulario__suscribir">
+                    <input type="email" class="suscribite__input" placeholder="ingresa tu correo electronico">
+                    <a type="submit" class="buton__suscribir">Suscribirme</a>
+                </form>
+            </div>
+        </section>
+        <section class="copy">
+            <p>Copyright © 2024 Voraga. Todos los derechos reservados.
+                El uso de este sitio web implica la aceptación de los Términos y Condiciones y de las Políticas de Privacidad de Dinser SRL.
+                Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Precios sujeto a cambios sin previo aviso.</p>
+        </section>
+    </footer>
+    <!-- Javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
+    

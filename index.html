@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon">
+    <title>Voraga</title>
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="grid__container">
+    <nav class="navbar bg-body-tertiary fixed-top d-md-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Voraga Joyeria</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/acero.html">Acero</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/plata.html">Plata</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/enchapadoenoro.html">Oro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="pages/accesorios.html">Accesorios</a>
+                  </li>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                <button class="btn btn-outline-success custom__color-buscar" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <header class="header__grid">
+        <section class="header__info">
+            <p>¡Bienvenido a la joyería más exclusiva de Argentina! Obtén un 40% de descuento con el código:<span class="codigo__descuento"> Voraga</span></p>
+        </section>
+        <section class="container__navbar">
+            <nav class="navbar__voraga navbar__contenedor">
+                <a href="index.html" class="navbar__logo">
+                    <img src="img/logo.webp" alt="Logo de la pagina">
+                    <span>Voraga</span>
+                </a>
+                <div class="navbar__nav">
+                    <ul class="navbar__list">
+                        <li class="nav__link">
+                            <a href="pages/acero.html">Acero</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/plata.html">Plata</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/enchapadoenoro.html">Oro</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="pages/accesorios.html">Accesorios</a>
+                        </li>
+                    </ul>
+                    <form action="" class="navbar__search">
+                        <a href="#" class="search__icon">
+                            <img src="img/search-heart.svg" alt="lupa de busqueda">
+                        </a>
+                    </form>
+                    <a href="#" class="iconos__nav">
+                        <img src="img/handbag-fill.svg" alt="icono de bolso">
+                    </a>
+                    <a href="#" class="iconos__nav">
+                        <img src="img/person-circle.svg" alt="icono de usuario">
+                    </a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main class="main__grid">
+        <section class="contenedor__carrusel">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col ">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <a href="#">
+                                <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Banner-index-1.webp" class="d-block w-100" alt="imagen banner aritos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Banner-index-2.webp" class="d-block w-100" alt="imagen banner anillos">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Banner-index-3.webp" class="d-block w-100" alt="imagen banner pulseras">
+                                </div>
+                                </div>
+                            </a>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tarjetas__index">
+            <div class="tarjetas__promo-index">
+                <div class="img__tarjeta-index">
+                    <img src="img/pulseras-amistad-tarjeta.webp" alt="pulseras del dia de la amistad">
+                </div>
+                <div class="texto__tarjetas-index">
+                    <a href="#">Dia de la amistad</a>
+                    <span>Gran variedad de accesorios</span>
+                </div>
+            </div>
+            <div class="tarjetas__promo-index">
+                <div class="img__tarjeta-index">
+                    <img src="img/descuento-tarjeta.webp" alt="imagen con descuentos">
+                </div>
+                <div class="texto__tarjetas-index">
+                    <a href="#">Descuentos</a>
+                    <span>Compra minima $15000</span>
+                </div>
+            </div>
+            <div class="tarjetas__promo-index">
+                <div class="img__tarjeta-index">
+                    <img src="img/artos-tarjeta.webp" alt="aros de plata inflada">
+                </div>
+                <div class="texto__tarjetas-index">
+                    <a href="#">Tendencias</a>
+                    <span>Gran variedad en tendencias</span>
+                </div>
+            </div>
+        </section>
+        <section class="informacion__index">
+            <div class="info__contenedor">
+                <div class="info__item">
+                    <img src="img/truck.svg" alt="imagen de envios">
+                    <div class="texto__info-index">
+                        <a href="#">FORMAS DE ENVIO</a>
+                        <span>Hacemos envíos a todo el país</span>
+                    </div>
+                </div>
+                <div class="info__item">
+                    <img src="img/currency-dollar.svg" alt="imagen de dinero">
+                    <div class="texto__info-index">
+                        <a href="#">FORMAS DE PAGO</a>
+                        <span>Sitio 100% seguro</span>
+                    </div>
+                </div>
+                <div class="info__item">
+                    <img src="img/person-lines-fill.svg" alt="imagen de persona">
+                    <div class="texto__info-index">
+                        <a href="#">CONTACTANOS</a>
+                        <span>Atención personalizada</span>
+                    </div>
+                </div>
+        </section>
+        <section class="bienvenida">
+            <div class="texto__bienvenida">
+                <h3>¡Bienvenidos a Voraga!</h3>
+                <span>Somos la joyería líder en ventas por mayor. En nuestra web vas a encontrar joyas de acero quirúrgico, joyas de plata, joyas enchapadas en oro, relojes y accesorios de moda. Contamos con el mejor precio del mercado. Hacemos envíos a todo el país, tenemos cuotas e importantes descuentos. ¿Qué esperás? ¡Sumate a nuestro club de revendoras!</span>
+            </div>
+        </section>
+        <section class="imagen__feed">
+            <div class="fondo__instagram">
+                <div class="instagram">
+                    <h2>INSTAGRAM</h2>
+                    <p>@voraga.joyeria</p>
+                    <a href="https://www.instagram.com/voragajoyeria/" class="btn__seguir" target="_blank">Seguir</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__grid-voraga">
+        <section class="categorias__footer">
+            <h4 class="titulo__footer">Categorias</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">Acero</a>
+                </li>
+                <li>
+                    <a href="">Plata</a>
+                </li>
+                <li>
+                    <a href="">Oro</a>
+                </li>
+                <li>
+                    <a href="">Accesorios</a>
+                </li>
+            </ul>
+        </section>
+        <section class="ayuda__footer">
+            <h4 class="titulo__footer">Ayuda</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Cambios y devoluciones</a>
+                </li>
+                <li>
+                    <a href="">Como comprar?</a>
+                </li>
+                <li>
+                    <a href="">Atencion al cliente</a>
+                </li>
+            </ul>
+        </section>
+        <section class="contacto__footer">
+            <h4 class="titulo__footer">Contacto</h4>
+            <ul class="listas__footer">
+                <li>
+                    <a href="">E-mail: voraga@gmail.com</a>
+                </li>
+                <li>
+                    <a href="">Direccion: Lago Escondido 967</a>
+                </li>
+            </ul>
+        </section>
+        <section class="siguenos__footer">
+            <h4 class="titulo__footer">Siguenos</h4>
+            <div class="social__iconos">
+                <a href="">
+                    <img src="img/facebook.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="img/instagram.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="img/twitter-x.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="img/whatsapp.svg" alt="">
+                </a>
+            </div>
+            <div class="suscribir">
+                <h4 class="titulo__suscribir">Suscribete ahora!</h4>
+                <form action="" class="formulario__suscribir">
+                    <input type="email" class="suscribite__input" placeholder="ingresa tu correo electronico">
+                    <a type="submit" class="buton__suscribir">Suscribirme</a>
+                </form>
+            </div>
+        </section>
+        <section class="copy">
+            <p>Copyright © 2024 Voraga. Todos los derechos reservados.
+                El uso de este sitio web implica la aceptación de los Términos y Condiciones y de las Políticas de Privacidad de Dinser SRL.
+                Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a la verificación de stock. Precios sujeto a cambios sin previo aviso.</p>
+        </section>
+    </footer>
+    <!-- Javascript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+
