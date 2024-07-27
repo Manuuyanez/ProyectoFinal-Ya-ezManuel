@@ -1,0 +1,112 @@
+.main__oro {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "introoro"
+        "orodata"
+        "destacado";
+
+        @include tablet{
+            margin: 30px;
+            margin-top: 50px;
+        }
+
+
+        .intro__oro {
+            grid-area: introoro;
+
+            .banner__oro{
+               
+                img {
+                    width: 100%;
+                    height: auto;
+                    padding: 20px;
+
+                    @include tablet{
+                        padding: 20px;
+                    }
+                }
+            }
+
+            .cards__oro{
+                padding: 20px;
+            }
+
+            .promo__oro {
+                text-align: center;
+                background-color: aliceblue;
+                padding: 20px;
+
+                h2 {
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+
+
+        .oro__data {
+            grid-area: orodata;
+            padding: 20px;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "data carru"
+                ;
+
+                @include tablet{
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                    
+                    "data"
+                    "carru"
+                    
+                    ;
+                }
+
+                .info__oro {
+                    grid-area: data;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 10px;
+                    padding: 10px;
+
+                    h3 {
+                        background-color: antiquewhite;
+                        border-radius: 5px;
+                        font-size: 25px;
+                    }
+                }
+
+                .oro__carru {
+                    grid-area: carru;
+
+                    .carousel-item{
+                       
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+        }
+
+        .destacados__oro {
+            grid-area: destacado;
+
+
+            .promo__oro{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container__promo__oro .row__oro .col {
+                margin-bottom: 15px;
+            }
+        }
+}

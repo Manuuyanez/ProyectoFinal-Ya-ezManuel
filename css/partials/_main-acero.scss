@@ -1,0 +1,213 @@
+.main__grid-acero{
+    grid-area: cuerpo;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "banneracero" 
+    "productos"
+    
+    ;
+
+    @include tablet{
+       
+        margin-top: 20px;
+    }
+
+    .filtro__productos{
+        @include tablet{
+            display: none;
+        }
+    }
+    
+    
+    .banner__acero{
+        grid-area: banneracero;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    
+    .productos-acero{
+        grid-area: productos;
+        display: grid;
+        
+        grid-template-columns: 0.3fr 1.5fr;
+        grid-auto-rows: auto;
+        padding: 10px;
+        grid-template-areas: 
+         
+        "filtro    anillos-acero"
+        "filtro    pulseras-acero"
+        "filtro    collares-acero"
+        
+        ;
+
+        @include tablet{
+            gap: 10px;
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+            padding: 10px;
+            grid-template-areas: 
+            
+            "anillos-acero"
+            "pulseras-acero"
+            "collares-acero"
+        
+        ;
+        }
+
+
+        .cards__anillos-acero{
+            grid-area: anillos-acero;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+
+            @include tablet{
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr;
+            }
+
+            @include mobile{
+                grid-template-columns: 1fr  ;
+                grid-template-rows: 1fr;
+            }
+        }
+
+        .cards__pulseras-acero{
+            grid-area: pulseras-acero;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+
+            @include tablet{
+                grid-template-columns: 1fr 1fr ;
+                 grid-template-rows: 1fr;
+            }
+
+            @include mobile{
+                grid-template-columns: 1fr  ;
+                grid-template-rows: 1fr;
+            }
+
+        }
+
+        .cards__collares-acero{
+            grid-area: collares-acero;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr;
+
+            @include tablet{
+                
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr;
+            }
+
+            @include mobile{
+                grid-template-columns: 1fr  ;
+                grid-template-rows: 1fr;
+            }
+        }
+
+        .container__acero{
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            height: 400px;
+            margin: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+            .img__producto-acero{
+                width: 100%;
+                height: 250px;
+                transition: transform 0.3s ease, filter 0.3s ease;
+
+                @include mobile{
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+
+            .img__producto-acero:hover{
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+
+            .titulo__producto-acero{
+                font-size: 1.2em;
+                margin: 10px 0 5px;
+            }
+
+            .precio__producto-acero{
+                font-size: 1.1em;
+                color: black;
+                margin: 5px 0;
+            }
+
+            .boton__contenedor-acero{
+                padding: 10px; 
+                display: flex;
+                justify-content: center;
+
+                .boton__compra{
+                    background-color: gray;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 20px;
+                    font-size: 1em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+                
+                .boton__compra:hover{
+                    transform: scale(1.1);
+                    background-color: gray;
+
+                    .icono__bolsa-compra{
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 10px;
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+        
+            }
+            
+        }
+
+        .container__acero:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+
+    }
+
+
+
+
+
+
+}

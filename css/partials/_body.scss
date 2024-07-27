@@ -1,0 +1,23 @@
+
+.grid__container{
+    display: grid;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: black;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.2fr 0.2fr;
+    grid-template-areas: 
+    
+        "cabeza"
+        "cuerpo"
+        "pies"
+    ;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+

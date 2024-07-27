@@ -1,0 +1,162 @@
+.main__grid-plata{
+    grid-area: cuerpo;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.5fr;
+    grid-template-areas: 
+
+    "titulo"
+    "tarjetasplata"
+    "banner__plata"
+    ;
+
+    @include tablet{
+        margin-top: 50px;
+    }
+
+
+    .titulo__plata{
+        grid-area: titulo;
+        padding: 20px;
+
+        h3{
+            text-align: center;
+            color: silver;
+            cursor: pointer;
+            font-size: 3rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h3:hover{
+            text-shadow: 0 0 10px silver, 0 0 20px silver, 0 0 30px silver;
+            color: white;
+        }
+
+        p{
+            color: silver;
+            text-shadow: 0 0 20px rgba(192, 192, 192, 1);
+            text-align: center;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        @keyframes changeText {
+            0%, 33% { content: "¡Bienvenido a nuestra sección de Plata 925! Disfruta de la mejor calidad en aleación de plata con una variedad única de joyas exclusivas."; }
+            34%, 66% { content: "Aprovecha nuestras ofertas de apertura"; }
+            67%, 100% { content: "Envios Gratis a todo el País"; }
+        }
+        
+        .animated-text::after {
+            content: "¡Bienvenido a nuestra sección de Plata 925! Disfruta de la mejor calidad en aleación de plata con una variedad única de joyas exclusivas.";
+            animation: changeText 9s infinite;
+        }
+        
+    }
+
+    .promo__plata{
+        grid-area: tarjetasplata;
+        display: flex;
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+
+        @include tablet{
+            flex-direction: column;
+            padding: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tarjetas__promo-plata{
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+
+
+            .img__tarjeta-plata {
+                
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                img:hover{
+                    transform: scale(1.1);
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+                }
+            }
+
+            .texto__tarjetas-plata{
+                display: flex;
+                flex-direction: column;
+                background-color: aliceblue;
+                margin-top: 5px;
+                padding: 10px 20px;
+                text-align: center;
+
+                a{
+                    color:black;
+                    font-weight: 600;
+                }
+            }
+            
+        }
+    }
+
+    .banner__plata{
+        grid-area: banner__plata;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        
+            "textobanner carruselplata"
+        
+        ;
+
+        @include tablet{
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.5fr 0.2fr;
+            grid-template-areas:
+            
+                "textobanner"
+                "carruselplata"
+            
+            ;
+        }
+
+        .texto__banner{
+            grid-area: textobanner;
+            padding: 20px;
+
+            .info__plata{
+                margin-top: 40px;
+
+                h3{
+                    color: silver;
+                    font-weight: 700;
+                    
+                }
+
+                p{
+                    color: silver;
+                    font-weight: 500;
+                    text-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+                }
+            }
+        }
+
+        .carrusel__plata{
+            grid-area: carruselplata;
+            padding: 20px;
+
+            .img__banner-plata{
+                height: 100;
+                width: 100;
+            }
+        }
+    }
+
+}

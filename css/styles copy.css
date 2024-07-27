@@ -160,6 +160,7 @@
 }
 
 
+/* BODY */
 
 a{
     text-decoration: none;
@@ -419,8 +420,8 @@ a{
     padding: 20px;
     border-radius: 5px;
     
-
 }
+
 
 .info__item img{
     height: 40px;
@@ -774,10 +775,11 @@ a{
 
 
 .img__tarjeta-plata img{
-    height: 400px;
-    width: 400px;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+    
 
 .img__tarjeta-plata img:hover{
     transform: scale(1.1);
@@ -842,7 +844,6 @@ a{
 }
 
 
-/* ACESORIOS */
 
 /* ACCESORIOS */
 
@@ -1183,6 +1184,8 @@ a{
 
 @media (max-width: 768px){
 
+    
+
     .header__grid{
         display: none;
     }
@@ -1202,8 +1205,9 @@ a{
     }
 
     .img__tarjeta-index img{
-        height: 700px;
-        width: 700px;
+        max-width: 100%;
+        height: auto;
+    
        
     }
 
@@ -1355,10 +1359,10 @@ a{
     
     
     .img__tarjeta-plata img{
-        height: 700px;
-        width: 700px;
-
+        max-width: 100%;
+        height: auto;
     }
+
 
     .banner__plata{
         grid-area: banner__plata;
@@ -1374,7 +1378,6 @@ a{
     }
 
 
-    /* ACCESORIOS */
 
     /* ACCESORIOS */
 
@@ -1403,6 +1406,14 @@ a{
        }
 
 
+       /* ORO */
+
+       .main_oro{
+       margin: 30px;}
+
+       .banner__oro img{
+        padding: 20px;
+       }
     
 
 }
@@ -1455,6 +1466,8 @@ a{
         align-items: center;
     }
 
+
+    
 }
     
 
